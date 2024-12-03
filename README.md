@@ -15,11 +15,24 @@
 
 ```bash
 sudo mkdir /var/kasplex
+```
+
+```bash
 sudo mkdir /var/kasplex/syncer
+```
+
+```bash
 sudo wget https://download.kasplex.org/indexer/kpsyncer/kpsyncer-linux-gnu-amd64-latest.zip -O ./kpsyncer.zip
+```
+
+```bash
 sudo unzip -o -d /var/kasplex/syncer ./kpsyncer.zip
+```
+
+```bash
 sudo chmod 0775 /var/kasplex/syncer/kpsyncer
 ```
+
 - Configuration, config.json file in the directory (rename after editing config.sample.json).
 
 ```bash
@@ -100,6 +113,9 @@ sudo nano /etc/systemd/system/kasplex-syncer.service
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl enable kasplex-syncer.service
 ```
 
@@ -118,9 +134,21 @@ sudo systemctl start kasplex-syncer.service
 
 ```bash
 sudo mkdir /var/kasplex
+```
+
+```bash
 sudo mkdir /var/kasplex/executor
+```
+
+```bash
 sudo wget https://download.kasplex.org/indexer/kpexecutor/kpexecutor-linux-gnu-amd64-latest.zip -O ./kpexecutor.zip
+```
+
+```bash
 sudo unzip -o -d /var/kasplex/executor  ./kpexecutor.zip
+```
+
+```bash
 sudo chmod 0775 /var/kasplex/executor/kpexecutor
 ```
 
@@ -128,8 +156,17 @@ sudo chmod 0775 /var/kasplex/executor/kpexecutor
 
 ```bash
 sudo apt install -y libsnappy-dev libgflags-dev
+```
+
+```bash
 sudo wget https://download.kasplex.org/indexer/kpexecutor/librocksdb.so.6.15.zip -O ./librocksdb.so.6.15.zip
+```
+
+```bash
 sudo unzip -o -d /var/kasplex/executor ./librocksdb.so.6.15.zip
+```
+
+```bash
 sudo cp /var/kasplex/executor/librocksdb.so.6.15 /usr/lib
 ```
 
@@ -189,6 +226,9 @@ sudo nano /etc/systemd/system/kasplex-executor.service
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl enable kasplex-executor.service
 ```
 
@@ -206,9 +246,21 @@ sudo systemctl start kasplex-executor.service
 
 ```bash
 sudo mkdir /var/kasplex
+```
+
+```bash
 sudo mkdir /var/kasplex/api
+```
+
+```bash
 sudo wget https://download.kasplex.org/indexer/kpapi/v1kpapi-linux-gnu-amd64-latest.zip -O ./v1kpapi.zip
+```
+
+```bash
 sudo unzip -o -d /var/kasplex/api ./v1kpapi.zip
+```
+
+```bash
 sudo chmod 0775 /var/kasplex/api/v1kpapi
 ```
 
@@ -264,6 +316,9 @@ sudo nano /etc/systemd/system/kasplex-api.service
 
 ```bash
 sudo systemctl daemon-reload
+```
+
+```bash
 sudo systemctl enable kasplex-api.service
 ```
 
