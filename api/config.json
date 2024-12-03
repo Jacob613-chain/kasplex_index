@@ -1,0 +1,16 @@
+{
+    "cassandra": {
+        "host": "127.0.0.1",
+        "port": 9042,
+        "user": "cassandra",
+        "pass": "cassandra",
+        "crt": "",
+        "space": "kpdb01mainnet"
+    },
+    "api": {
+        "host": "0.0.0.0",
+        "port": "8005"
+    },
+    "testnet": false,
+    "debug": 2
+}

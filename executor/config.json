@@ -1,0 +1,20 @@
+{
+    "startup": {
+        "hysteresis": 3,
+        "daaScoreRange": [],
+        "tickReserved": []
+    },
+    "cassandra": {
+        "host": "127.0.0.1",
+        "port": 9042,
+        "user": "cassandra",
+        "pass": "cassandra",
+        "crt": "",
+        "space": "kpdb01mainnet"
+    },
+    "rocksdb": {
+        "path": "./data"
+    },
+    "testnet": false,
+    "debug": 2
+}

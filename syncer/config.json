@@ -1,0 +1,22 @@
+{
+    "node": {
+        "grpc": [
+            "127.0.0.1:16110",
+            "127.0.0.1:16110",
+            "127.0.0.1:16110"
+        ],
+        "start": "",
+        "daaScoreStart": 0,
+        "archive": "https://api.kasplex.org"
+    },
+    "cassandra": {
+        "host": "127.0.0.1",
+        "port": 9042,
+        "user": "cassandra",
+        "pass": "cassandra",
+        "crt": "",
+        "space": "kpdb01mainnet"
+    },
+    "testnet": false,
+    "debug": 2
+}
